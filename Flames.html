@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Flames.css">
+        <script src="flames.js"></script>
+        <title>Flames</title>
+    </head>
+    
+    <body>
+        <div class="background">
+            <div class="bg-wave"></div>
+            <div class="bg-wave"></div>
+            <div class="bg-wave"></div>
+        </div>
+        
+        <div class='sudoku'>
+            <div>
+                <h2>FLAMES</h2>
+            </div>
+            
+            <form name=sudokuform>
+                <div class='main'>
+                    <div class='sub-div'>
+                        <div class='name group'>
+                            <b>Enter Your Name</b>
+                            <input type=text name=name class='txt' value='' onkeyup=checknum(this) id='yourname'>
+                        </div>
+                        <br>
+                        
+                        <div class='group name'> 
+                            <b>Enter Your Partner's Name </b>
+                            <input type=text name=name1 class='txt' value='' onkeyup=checknum(this) id='lovername'>
+                        </div>
+                        
+                        <div name=resultName id=nam1></div>
+                        <div style='font-weight:bold;' id='msg'></div>
+                    </div>
+                    
+                    <div class='answer'>
+
+                        <div id="button-container">
+                            <input type=button class='primary-button' name=calculate value=Flames onclick=calc()>
+                            <input type=reset class='primary-button' value=Reset onclick='clear_all()'>
+                            <span class="round"></span>
+                        </div>
+                        
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div id='footer'>
+                    <div class='group'>
+                        <div class='flames-result'>
+                            <span name=resultName id=nam1></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
